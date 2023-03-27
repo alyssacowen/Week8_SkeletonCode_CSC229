@@ -24,18 +24,7 @@ public class LinearSearch {
 //         - provide asymptotic analysis of the developed solution
 //
     }
-    public static void main(String[] args) {
-        int arr[]={5,20,7,9,31,4};
-        int x = 7;
-        int index = search(arr,x);
-        if (index > -1){
-            System.out.println("Integer " + x + " is in the array at index " + index);
-        }
-        else{
-            System.out.println("There is no occurence of integer " + x + " in the array");
-        }
-    }
-    //I chose 7 as the x and since 7 is in the array, after running this code, the output was "Integer 7 is in the array at index 2"
+    
     
     
 }
