@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.week8_skeletoncode_lab;
+
+import static com.mycompany.week8_skeletoncode_lab.BinarySearch.runBinarySearchIteratively;
+import static com.mycompany.week8_skeletoncode_lab.LinearSearch.search;
+
+
+
+/**
+ *
+ * @author alyss
+ */
+public class Main {
+    public static void main(String[] args) {
+        //Linear Search 
+        int arr[]={5,20,7,9,31,4};
+        int x = 7;
+        int Linearindex = search(arr,x);
+        if (Linearindex > -1){
+            System.out.println("During the linear search, integer " + x + " is in the array at index " + Linearindex);
+        }
+        else{
+            System.out.println("There is no occurence of integer " + x + " in the array");
+             //I chose 7 as the x and since 7 is in the array, after running this code, the output was "During the linear search, integer 7 is in the array at index 2"
+        }
+        //Binary Search
+         int[] sortedArray = {4,5,7,9,20,31};
+        int key = 20;
+        int low = 0;
+        int high = 5;
+        int index = runBinarySearchIteratively(sortedArray, key, low, high);
+        System.out.println("During the binary search, integer " + key + " can be found at index " + index);
+    }
+    }
+
+   
+
