@@ -35,7 +35,7 @@ public class LinearSearch {
             System.out.println("There is no occurence of integer " + x + " in the array");
         }
     }
-    
+    //I chose 7 as the x and since 7 is in the array, after running this code, the output was "Integer 7 is in the array at index 2"
     
     
 }
