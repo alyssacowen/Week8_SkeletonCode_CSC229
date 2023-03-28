@@ -23,6 +23,9 @@ public class LinearSearch {
         return -1; //during the linear search, if x is never found, this function will return -1
 //         - provide asymptotic analysis of the developed solution
 //
+// upper bound is O(n)
+//lower bound is big omega(n)
+//tight bound is theta(n)
     }
     
     
