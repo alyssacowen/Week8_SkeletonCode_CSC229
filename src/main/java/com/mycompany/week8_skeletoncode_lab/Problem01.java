@@ -22,15 +22,14 @@ public class Problem01 {
         return true;
     }
     public static long getSumOfPrimes(int n){
-        long sum = 0;
-        long result;
-    if (n == 1)
-    result = 1;
-        else
-            result = n + getSumOfPrimes(n-1);
-                return result;
+       long sum = 0;
+       for (int i = 2; i <= n; i++){
+           if(isPrime(i)){
+               sum+=i;
+           }
+       }
+return sum;
 }
-
 }
   
 
@@ -39,6 +38,8 @@ public class Problem01 {
     // Todo 04: Develop a method that returns the sum of the prime numbers between 1 and n
     //          Test your solution
     //          Analyze its space and time  
+//isPrime time complexity is O(sqrt(n)) and the space complexity is O(1)
+//getSumOfPrimes time complexity is O(n*sqrt(n)) and the space complexity is O(1)
     
     
   
