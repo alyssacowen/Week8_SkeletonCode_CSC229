@@ -27,7 +27,7 @@ public class BinarySearch {
         }
         return index;
     }
-    //ToDo 2: Call the above method and test the algorithm  
+       //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
-
+//the time complexity is O(logn) and the space complexity is O(1)
 }
